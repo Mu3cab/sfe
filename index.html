@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Timer</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="LSBU.png" alt="LSBU-Logo" class="logo">
+    </header>
+    <div class="digital-clock">
+        <div class="time">
+            <span class="hours">08</span>
+            <span class="dots">:</span>
+            <span class="minutes">10</span>
+            <div class="right-side">
+                <span class="period">PM</span>
+                <span class="seconds">20</span>
+            </div>
+        </div>
+        <div class="calendar">
+            <span class="month-name">Month</span>
+            <span class="day-name">Day</span>
+            <span class="day-number">00</span>
+            <span class="year">0000</span>
+        </div>
+        <div class="timer">
+            <input type="number" id="add-hours" placeholder="Hours" min="0">
+            <input type="number" id="add-minutes" placeholder="Minutes" min="0">
+            <button onclick="addTime()">Add Time</button>
+            <button onclick="resetCountdown()">Reset Countdown</button>
+        </div>
+        <div class="countdown">
+            <span class="countdown-label">Countdown:</span>
+            <span class="countdown-timer">00:00:00</span>
+        </div>
+        <div class="alert red" id="toilet-break-not-allowed">Toilet break not allowed in the last 30 minutes!</div>
+        <div class="alert green" id="toilet-break-allowed">Students can take a toilet break.</div>
+        <div class="alert green" id="finished-allowed">You can leave the room if finished.</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

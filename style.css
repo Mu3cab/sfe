@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background: gray;
+    max-width: 500px; /* Set max width for body */
+    margin: auto; /* Center body */
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 300px;
+    height: auto;
+    margin-top: 50px;
+    border-radius: 20px;
+}
+
+.digital-clock {
+    background: linear-gradient(135deg, #800080, #ffffff);
+    width: 100%; /* Make digital clock take full width of body */
+    padding: 20px 50px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.time {
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+}
+
+.hours, .dots, .minutes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    padding: 0 10px;
+    line-height: 125px;
+}
+
+.hours, .minutes {
+    font-size: 6.5em;
+    width: 125px;
+}
+
+.right-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.period, .seconds {
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.period {
+    transform: translateY(-20px);
+}
+
+.seconds {
+    transform: translateY(16px);
+}
+
+.calendar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.day-name, .day-number, .year {
+    margin-left: 8px;
+}
+
+.timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.timer input {
+    margin-right: 0.5em;
+    padding: 5px;
+    font-size: 13px;
+}
+
+.timer button {
+    padding: 2px;
+    width: auto;
+    font-size: 10px;
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 1.5em;
+}
+
+.countdown-label {
+    margin-right: 10px;
+}
+
+.alert {
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: center;
+    display: none;
+}
+
+.alert.red {
+    color: red;
+    font-weight: bold;
+}
+
+.alert.green {
+    color: green;
+    font-weight: bold;
+}
